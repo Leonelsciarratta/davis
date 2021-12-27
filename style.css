@@ -1,0 +1,95 @@
+.html,body{
+    /* Para que funcione correctamente en Smarthpones y Tablets */
+    height:100vh;
+}
+body {
+    /* Ruta relativa o completa a la imagen */
+    /* Centramos el fondo horizontal y verticalmente */
+    background-position: center center;
+    /* El fonde no se repite */
+    background-repeat: no-repeat;
+    /* Fijamos la imagen a la ventana para que no supere el alto de la ventana */
+    background-attachment: fixed;
+    /* El fonde se re-escala automáticamente */
+    background-size: cover;
+    /* Color de fondo si la imagen no se encuentra o mientras se está cargando */
+    background-color:#292929;
+    /* Fuente para el texto */
+    text-align: center;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+        
+}
+/* Background para ancho máximo de la pantalla física */
+@media only screen and (max-device-width: 767px) {
+body {
+    background: #292929;
+    font-family: "Times New Roman", Times, serif;
+
+}
+}
+/* Background para ancho máximo del navegador */
+@media only screen and (max-width: 767px) {
+body {
+    background: #292929;
+    font-family: "Times New Roman", Times, serif;
+}
+}
+/* Dimensiones del div principal */
+#lorem {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+/* Color del Link */
+a {
+    color: black;
+    text-decoration: none;
+}
+/* Texto justificado del párrafo */
+p {
+    text-align: justify;
+}
+.section5{
+   background-color: #efbb1e;
+    
+ }
+ .titulo-servicios h2{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+
+}
+.container-fluid{
+   background-color:#efbb1e;  
+}
+.navbar-nav{
+   background-color:#efbb1e;  
+}
+.navbar navbar-expand-lg navbar-light bg-light{
+   background-color:#efbb1e;  
+}
+.navbar-brand{
+   background-color:#efbb1e;  
+}
+nav{
+   background-color:#efbb1e;  
+}
+.navbar-custom .navbar-nav .nav-link {
+   color:#efbb1e;
+}
+.img-fluid{
+    margin-right:10px;
+    margin-left:0px; 
+    margin-bottom:20px;
+    margin-top:20px;
+    width: 180px; 
+    height: 180px;    
+    
+}
+.pie-pagina{
+   background-color:#efbb1e; 
+   color:black; 
+   
+}

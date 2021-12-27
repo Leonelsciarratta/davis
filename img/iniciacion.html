@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://www.neoguias.com/windows-y-node-guia-de-iniciacion/ -->
+<html lang="es" prefix="og: https://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Neoguias - Sistemas, Aplicaciones, Dispositivos y Programación a Todos los Niveles">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.neoguias.com/xmlrpc.php">
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.neoguias.com/images/icon/iapple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.neoguias.com/images/icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.neoguias.com/images/icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.neoguias.com/images/icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.neoguias.com/images/icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.neoguias.com/images/icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.neoguias.com/images/icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.neoguias.com/images/icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.neoguias.com/images/icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://www.neoguias.com/images/icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.neoguias.com/images/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://www.neoguias.com/images/icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.neoguias.com/images/icon/favicon-16x16.png">
+<link rel="manifest" href="https://www.neoguias.com/images/icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link media="all" href="./iniciacion_files/autoptimize_35acb0f3c787ba92b22db37ab3f560a5.css" rel="stylesheet"><title>Windows y Node: Guía de iniciación | Neoguias</title>
+
+<meta name="description" content="Anteriormente era toda una aventura crear un servidor de Node en Windows, pero desde que Microsoft se alió con Joyent para portar Node a Windows, Node ha ido ganando fuerza y popularidad en el sistema operativo de Microsoft, por lo que si al igual que yo también programáis en Windows, esta guía es para vosotros. [...]Leer más...">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/">
+<meta property="og:site_name" content="Neoguias | Sistemas, Aplicaciones, Dispositivos y Programación a Todos los Niveles">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows y Node: Guía de iniciación | Neoguias">
+<meta property="og:description" content="Anteriormente era toda una aventura crear un servidor de Node en Windows, pero desde que Microsoft se alió con Joyent para portar Node a Windows, Node ha ido ganando fuerza y popularidad en el sistema operativo de Microsoft, por lo que si al igual que yo también programáis en Windows, esta guía es para vosotros. [...]Leer más...">
+<meta property="og:url" content="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/">
+<meta property="og:image" content="https://www.neoguias.com/wp-content/uploads/2017/03/linux-neeonez-defecto.jpg">
+<meta property="og:image:secure_url" content="https://www.neoguias.com/wp-content/uploads/2017/03/linux-neeonez-defecto.jpg">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="439">
+<meta property="article:published_time" content="2014-04-29T15:58:07Z">
+<meta property="article:modified_time" content="2019-05-27T21:01:58Z">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="www.neoguias.com">
+<meta property="twitter:title" content="Windows y Node: Guía de iniciación | Neoguias">
+<meta property="twitter:description" content="Anteriormente era toda una aventura crear un servidor de Node en Windows, pero desde que Microsoft se alió con Joyent para portar Node a Windows, Node ha ido ganando fuerza y popularidad en el sistema operativo de Microsoft, por lo que si al igual que yo también programáis en Windows, esta guía es para vosotros. [...]Leer más...">
+<meta property="twitter:image" content="https://www.neoguias.com/wp-content/uploads/2017/03/linux-neeonez-defecto.jpg">
+<meta name="google" content="nositelinkssearchbox">
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://c0.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="Neoguias » Feed" href="https://www.neoguias.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Neoguias » Feed de los comentarios" href="https://www.neoguias.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Neoguias » Comentario Windows y Node: Guía de iniciación del feed" href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/feed/">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="https://api.w.org/" href="https://www.neoguias.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.neoguias.com/wp-json/wp/v2/posts/253"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.neoguias.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.neoguias.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.6.3">
+<link rel="shortlink" href="https://wp.me/p9rKhj-45">
+<link rel="alternate" type="application/json+oembed" href="https://www.neoguias.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.neoguias.com%2Fwindows-y-node-guia-de-iniciacion%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.neoguias.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.neoguias.com%2Fwindows-y-node-guia-de-iniciacion%2F&amp;format=xml">
+<style type="text/css">div#toc_container {width: 100%;}div#toc_container ul li {font-size: 100%;}</style><style type="text/css">img#wpstats{display:none}</style> <script src="./iniciacion_files/osd.js.descarga"></script><script src="./iniciacion_files/f.txt"></script><script src="./iniciacion_files/f(1).txt" id="google_shimpl"></script><script defer="" src="./iniciacion_files/f(2).txt"></script>
+<script defer="">
+		window.onload = function(){
+			[].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
+				adsbygoogle.push({})
+			})
+		}
+	</script>
+<meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A0OysezhLoCRYomumeYlubLurZTCmsjTb087OvtCy95jNM65cfEsbajrJnhaGwiTxhz38ZZbm+UhUwQuXfVPTg0AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxoOxdZQmIoA1WeAPDixRAeWDdgs7ZtVFfH2y19ziTgD1iaHE5ZGz2UdSjubkWvob9C5PrjUfkWi4ZSLgWk3Xg8AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7+rMYR5onPnACrz+niKSeFdH3xw1IyHo2AZSHmxrofRk9w4HcQPMYcpBUKu6OQ6zsdxf4m/vqa6tG6Na4OLpAQAAAB4eyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="preload" href="./iniciacion_files/f(3).txt" as="script"><script type="text/javascript" src="./iniciacion_files/f(3).txt"></script><link rel="preload" href="./iniciacion_files/f(4).txt" as="script"><script type="text/javascript" src="./iniciacion_files/f(4).txt"></script><link rel="preload" href="./iniciacion_files/f(3).txt" as="script"><script type="text/javascript" src="./iniciacion_files/f(3).txt"></script><link rel="preload" href="./iniciacion_files/f(4).txt" as="script"><script type="text/javascript" src="./iniciacion_files/f(4).txt"></script></head>
+<body class="post-template-default single single-post postid-253 single-format-standard group-blog">
+<div class="hfeed site" id="page">
+<div id="top-banner">
+Ya está disponible el framework MVC para WordPress! <a href="https://sciwp.com/" target="_blank" class="main">Puedes echarle un ojo aquí!</a>
+</div>
+<nav id="top-nav" class="navbar navbar-expand-lg">
+<a class="top-nav-logo" href="https://www.neoguias.com/">neoguias.com</a>
+<div id="headernavbar-right" class="foat-right">
+<a id="headernavbar_search_icon" onclick="click_headernavbar_search_icon()" class="max-991">
+<i class="fa fa-search" aria-hidden="true"></i>
+</a>
+<button id="neo_main_menu_button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+</div>
+<div id="neo_main_menu" class="collapse navbar-collapse flex-grow-0">
+<ul class="navbar-nav">
+<li class="nav-item active">
+<a href="https://www.neoguias.com/"><i class="fa fa-home" style="margin-right: 4px;"></i>Inicio</a>
+</li>
+<li class="nav-item">
+<a href="https://www.neoguias.com/tutoriales"><i class="fa fa-book" style="margin-right: 4px;"></i>Tutoriales</a>
+</li>
+<li class="nav-item">
+<a href="https://www.neoguias.com/guias"><i class="fa fa-leanpub" style="margin-right: 4px;"></i>Guías</a>
+</li>
+<li class="nav-item">
+<a href="https://www.neoguias.com/introducciones"><i class="fa fa-rocket" style="margin-right: 4px;"></i>Introducciones</a>
+</li>
+<li class="nav-item">
+<a href="https://www.neoguias.com/taller"><i class="fa fa-code" style="margin-right: 4px;"></i>Taller</a>
+</li>
+</ul>
+</div>
+<form id="top-nav-search-form" method="get" action="https://www.neoguias.com/" role="search" class="foat-right">
+<div class="input-group">
+<input class="field form-control" name="s" type="text" placeholder="Buscar …" value="">
+<span class="input-group-btn">
+<input class="submit btn btn-primary" name="submit" type="submit" value="Buscar">
+</span>
+</div>
+</form>
+</nav>
+<div id="sub-nav">
+<li class="nav-item active">
+<a href="https://www.neoguias.com/tutorial-vue">Introducción a Vue</a>
+</li>
+</div>
+<div class="wrapper" id="single-wrapper">
+<div class="container-fluid" id="content" tabindex="-1">
+<div class="row">
+<div class="col-md-12">
+<header class="entry-header">
+<noscript><img alt='' src='https://secure.gravatar.com/avatar/a97a54103b934b14ca1794702ddae86c?s=75&#038;r=g' srcset='https://secure.gravatar.com/avatar/a97a54103b934b14ca1794702ddae86c?s=150&#038;r=g 2x' class='avatar avatar-75 photo' height='75' width='75' /></noscript><img alt="" src="./iniciacion_files/a97a54103b934b14ca1794702ddae86c.png" data-src="https://secure.gravatar.com/avatar/a97a54103b934b14ca1794702ddae86c?s=75&amp;r=g" data-srcset="https://secure.gravatar.com/avatar/a97a54103b934b14ca1794702ddae86c?s=150&amp;r=g 2x" class="avatar avatar-75 photo lazyloaded" height="75" width="75" srcset="https://secure.gravatar.com/avatar/a97a54103b934b14ca1794702ddae86c?s=150&amp;r=g 2x"> <h1 class="entry-title">Windows y Node: Guía de iniciación</h1> <div class="entry-header-container">
+<div class="entry-meta">
+<span class="posted-on">Publicado el <time class="updated" datetime="2019-05-27T23:01:58+02:00"> 27 mayo, 2019 </time><span class="byline"> por <span class="author vcard">Edu Lázaro</span> | <a href="https://twitter.com/neeonez">@neeonez</a></span> </span></div>
+<div class="entry-header-tags tags">
+<a href="https://www.neoguias.com/tutoriales/aplicaciones/" style="background:#ecdb54; color: #000 !important;">Aplicaciones</a><a href="https://www.neoguias.com/tutoriales/node/" style="background:#90c53f; color: #272822 !important;">Node.js</a><a href="https://www.neoguias.com/tutoriales/windows/" style="background:#0078d7; color: #ffffff !important;">Windows</a> </div>
+</div>
+</header>
+</div>
+</div>
+<div class="row">
+<div id="left-bar">
+<div class="neo-widget menu-widget"><h4>📚 Tutoriales</h4><ul class="menu level-1"><li class=""><a href="https://www.neoguias.com/tutoriales/aplicaciones/"><i class="fa fa-folder-o"></i> &nbsp;Aplicaciones</a></li><li class=""><a href="https://www.neoguias.com/tutoriales/bases-de-datos/"><i class="fa fa-folder-o"></i> &nbsp;Bases de datos</a></li><li class=""><a href="https://www.neoguias.com/tutoriales/dispositivos/"><i class="fa fa-folder-o"></i> &nbsp;Dispositivos</a></li><li class=""><a href="https://www.neoguias.com/tutoriales/hardware/"><i class="fa fa-folder-o"></i> &nbsp;Hardware</a></li><li class=""><a href="https://www.neoguias.com/tutoriales/inversion/"><i class="fa fa-folder-o"></i> &nbsp;Inversión</a></li><li class=""><a href="https://www.neoguias.com/tutoriales/marketing/"><i class="fa fa-folder-o"></i> &nbsp;Marketing</a></li><li class=""><a href="https://www.neoguias.com/tutoriales/programacion/"><i class="fa fa-folder-o"></i> &nbsp;Programacion</a></li><li class=""><a href="https://www.neoguias.com/tutoriales/sistemas/"><i class="fa fa-folder-o"></i> &nbsp;Sistemas</a></li></ul></div> <div class="neo-widget follow-widget">
+<h4>💘 Seguir</h4>
+<ul>
+<li>
+<a href="https://twitter.com/neoguiascom"><i class="fa fa-twitter"></i> &nbsp;Seguir en Twitter!</a>
+</li>
+<li>
+<a href="https://facebook.com/neoguiascom"><i class="fa fa-facebook"></i> &nbsp;Seguir en Facebook!</a>
+</li>
+<li>
+<a href="https://github.com/neoguias"><i class="fa fa-github"></i> &nbsp;Seguir en GitHub!</a>
+</li>
+</ul>
+</div>
+<div class="neo-widget post-tags-widget">
+<h4>🏷️ Etiquetas</h4>
+<ul class="menu"><li><a href="https://www.neoguias.com/tutoriales/node/"><i class="fa fa-link"></i> &nbsp;Node.js</a></li><li><a href="https://www.neoguias.com/tutoriales/servidores/"><i class="fa fa-link"></i> &nbsp;Servidores</a></li><li><a href="https://www.neoguias.com/tutoriales/windows/"><i class="fa fa-link"></i> &nbsp;Windows</a></li></ul> </div>
+</div>
+<div class="content-area" id="primary">
+<main class="site-main" id="main">
+<article class="post-253 post type-post status-publish format-standard has-post-thumbnail hentry category-tutoriales tutoriales-aplicaciones tutoriales-node tutoriales-servidores tutoriales-sistemas tutoriales-aplicaciones-tipo tutoriales-windows" id="post-253">
+<div class="entry-content">
+<p>Anteriormente era toda una aventura crear un servidor de Node en Windows, pero desde que Microsoft se alió con Joyent para portar Node a Windows, Node ha ido ganando fuerza y popularidad en el sistema operativo de Microsoft, por lo que si al igual que yo también programáis en Windows, esta guía es para vosotros.</p>
+<div id="toc_container" class="no_bullets"><p class="toc_title">Contenidos</p><ul class="toc_list"><li><a href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/#Que_es_Node"><span class="toc_number toc_depth_1">1</span> ¿Qué es Node?</a></li><li><a href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/#Instalacion"><span class="toc_number toc_depth_1">2</span> Instalación</a></li><li><a href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/#Ejecutando_Node"><span class="toc_number toc_depth_1">3</span> Ejecutando Node</a></li><li><a href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/#Ejecutando_npm"><span class="toc_number toc_depth_1">4</span> Ejecutando npm</a></li><li><a href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/#Creando_nuestro_primer_proyecto"><span class="toc_number toc_depth_1">5</span> Creando nuestro primer proyecto</a></li></ul></div>
+<h2><span id="Que_es_Node">¿Qué es Node?</span></h2>
+<p>Node es un servidor web que ejecuta Javascript del lado del servidor, creado inicialmente para aquellas tareas para las que PHP no es apto, como la transmisión de datos a miles de clientes simultáneamente. Mientras que PHP crea un proceso para cada usuario, Node tendrá solamente un proceso. Node está oriantado a eventos en lugar de estar orientado a peticiones como PHP. En Node, una sola instancia de un script será suficiente para atender las demandas de miles de clientes. Aunque Node se ha ido metiendo en el terreno de PHP mediante frameworks e incluso algún CMS, tampoco podemos decir que le quite terreno al mismo, puesto que por ahora, PHP es un lenguage mucho más completo, maduro y seguro.</p>
+<p>En el momento de escribir ésto me encuentro desarrollando un juego de navegador para en el cual necesito algo que sea lo más próximo posible al tiempo real. Desde luego, ni las tradicionales peticiones HTTP ni el uso de AJAX me sirve. También he descartado <a title="APE" href="http://ape-project.org/" target="_blank" rel="noopener noreferrer nofollow">APE</a>, por lo que he comenzado con Node y sus sockets. Aunque PHP también soporta sockets, tal y como decía, se crearán subprocesos por cada conexión, por lo que la escalabilidad y el rendimiento no es sin duda su baza principal.</p>
+<h2><span id="Instalacion">Instalación</span></h2>
+<p>Instalaremos Node en Windows 7 Home Professional y no necesitaremos compiladores, ni Cygwin ni Visual Studio.</p>
+<p><noscript><img class="size-full wp-image-255 aligncenter" src="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs.jpg" alt="" width='500' height='281' srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs-300x168.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript><img class="size-full wp-image-255 aligncenter lazyloaded" src="./iniciacion_files/neeonez-nodejs.jpg" data-src="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs.jpg" alt="" width="500" height="281" data-srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs-300x168.jpg 300w" data-sizes="(max-width: 500px) 100vw, 500px" sizes="(max-width: 500px) 100vw, 500px" srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs-300x168.jpg 300w"></p>
+<p>Lo primero que haremos será ir a <a title="nodejs.org" href="https://nodejs.org/" target="_blank" rel="noopener noreferrer nofollow">nodejs.org</a>&nbsp;y hacer click en&nbsp;“<em>Download</em>”. Descargamos el instalador MSI y lo ejecutamos seleccionando las opciones por defecto. Se instalará Node y npm, es decir, Node junto con su gestor de paquetes que podremos controlar desde la consola de Windows como si lo hiciésemos desde Unix.</p>
+<p><noscript><img class="size-full wp-image-257 aligncenter" src="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs2.jpg" alt="" width='500' height='281' srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs2.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs2-300x168.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript><img class="size-full wp-image-257 aligncenter lazyloaded" src="./iniciacion_files/neeonez-nodejs2.jpg" data-src="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs2.jpg" alt="" width="500" height="281" data-srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs2.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs2-300x168.jpg 300w" data-sizes="(max-width: 500px) 100vw, 500px" sizes="(max-width: 500px) 100vw, 500px" srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs2.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs2-300x168.jpg 300w"></p>
+<p>Al ejecutar el instalador de Windows se mostrará el instalador que es muy fácil de seguir. Los <a href="https://www.neoguias.com/archivo/">archivos</a> de Node se instalarán por defecto en «C:\Program Files (x86)\nodejs\» y podremos acceder a ellos desde «<em>cmd.exe</em>«.</p>
+<p><noscript><img class="size-full wp-image-258 aligncenter" src="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs3.jpg" alt="" width='500' height='247' srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs3.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs3-300x148.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript><img class="size-full wp-image-258 aligncenter lazyloaded" src="./iniciacion_files/neeonez-nodejs3.jpg" data-src="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs3.jpg" alt="" width="500" height="247" data-srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs3.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs3-300x148.jpg 300w" data-sizes="(max-width: 500px) 100vw, 500px" sizes="(max-width: 500px) 100vw, 500px" srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs3.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs3-300x148.jpg 300w"></p>
+<h2><span id="Ejecutando_Node">Ejecutando Node</span></h2>
+<p>Para ejecutar Node, abrimos la consola de Windows y escribimos «<em>node</em>«. Ésto cargará Node REPL en donde JavaScript podrá ser interpretado. Por ejemplo podemos abrir nuestro archivo win.ini usando el comando <em>fs</em> de Node.</p>
+<p><noscript><img class="size-full wp-image-259 aligncenter" src="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs4.jpg" alt="" width='500' height='253' srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs4.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs4-300x151.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript><img class="size-full wp-image-259 aligncenter lazyloaded" src="./iniciacion_files/neeonez-nodejs4.jpg" data-src="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs4.jpg" alt="" width="500" height="253" data-srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs4.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs4-300x151.jpg 300w" data-sizes="(max-width: 500px) 100vw, 500px" sizes="(max-width: 500px) 100vw, 500px" srcset="https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs4.jpg 500w, https://www.neoguias.com/wp-content/uploads/2014/04/neeonez-nodejs4-300x151.jpg 300w"></p>
+<p>Si queremos salir del intérprete de comandos, podemos pulsar <em>ctrl-d</em> al igual que en Unix.</p>
+<h2><span id="Ejecutando_npm">Ejecutando npm</span></h2>
+<p>Vamos a instalar por ejemplo la extensión MySQL de Node. Aunque las bases de datos con las que se suele trabajar en Node son NoSQL, podemos integrar Node con SQL mediante los módulos mysql de Node.</p>
+<p>El módulo <a title="node-mysql" href="https://github.com/felixge/node-mysql" target="_blank" rel="noopener noreferrer nofollow">node-mysql</a>&nbsp;es una implementación del protocolo MySQL escrita 100% con node.js. Para instalarla sencillamente ejecutamos desde la consola de Windows el siguiente comando:</p>
+<pre># Instalando node-mysql y sus dependencias vía npm
+npm install mysql</pre>
+<h2><span id="Creando_nuestro_primer_proyecto">Creando nuestro primer proyecto</span></h2>
+<p>Para nuestro primer proyecto creamos un directorio por ejemplo en C:\miproyecto y seguidamente creamos un archivo llamado package.json con vuestro editor preferido que contendrá:</p>
+<pre>{
+  "name": "MIPROYECTO",
+  "version": "0.0.1",
+  "author": "EDUARDO",
+  "dependencies": {
+    "mysql": "2.x.x"
+  }
+}</pre>
+<p>En las parte de dependencias deberemos incluir todos los paquetes que vayamos a utilizar; en el ejemplo vemos que hemos incluido el paquete mysql. Seguidamente vamos a&nbsp;<em>C:\miproyecto</em>&nbsp;y ejecutamos:</p>
+<pre>cd c:\miproyecyo
+npm install</pre>
+<p>Así se instalarán todos los paquetes que hayamos escrito en la sección de dependencias. Si queremos instalar también el módulo express, que no es otra cosa que un framework, nuestro archivo .json debería verse así.</p>
+<pre>{
+  "name": "MIPROYECTO",
+  "version": "0.0.1",
+  "author": "EDUARDO",
+  "dependencies": {
+    "mysql": "2.x.x"
+    "express": "latest"
+  }
+}</pre>
+<p>Ahora crearemos el archivo index.js en&nbsp;<em>C:\miproyecto</em>&nbsp;y pegamos dentro el siguiente código:</p>
+<pre>var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hola Mundo\n');
+  var mysql      = require('mysql');
+
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  database     : 'miproyecto', 
+  user     : 'root',
+  password : '',
+});
+
+connection.connect();
+
+var key = 'en-us'; 
+var queryString = 'SELECT * FROM languages WHERE key = ' + 
+                   connection.escape(key);
+
+connection.query(queryString, function(err, rows, fields) {
+    if (err) throw err;
+
+    for (var i in rows) {
+        console.log(rows[i]);
+    }
+});
+
+connection.end();
+
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');</pre>
+<p>Lo que hacemos en el Script es crear el servidor y mostrar el típico «Hola Mundo» y después ejecutar una consula SQL (tras escribir los datos de acceso) y mostrar el resultado. Le asignamos la IP&nbsp;127.0.0.1 y el puerto&nbsp;1337.</p>
+<p>Para iniciar el servidor escribimos:</p>
+<pre>C:\node&gt; node index.js</pre>
+<p>Ahora podremos acceder a&nbsp;http://127.0.0.1:1337/ en nuestro navegador y ver el resultado ‘Hola Mundo’. El resultado de las consultas podéis verlo en la consola, ya que hemos utilizado la función <em>console.log&nbsp;</em>para mostrar los resultados.</p>
+<p>Si tenéis alguna duda o queréis completar el artículo, no dudéis en escribir algún comentario. Espero que la guía os haya sido útil.</p>
+<hr>
+<div class="container-fluid autor-info neo-widget">
+<div class="row">
+<div class="col-md-3">
+<img alt="Avatar de Edu Lazaro" src="./iniciacion_files/avatar.gif" data-src="/wp-content/themes/neoguias/img/avatar.gif" class=" avatar avatar-150 photo lazyloaded " height="150" width="150" data-srcset="https://secure.gravatar.com/avatar/a97a54103b934b14ca1794702ddae86c?s=300&amp;r=g 2x" srcset="https://secure.gravatar.com/avatar/a97a54103b934b14ca1794702ddae86c?s=300&amp;r=g 2x">
+</div>
+<div class="col-md-5">
+<p class="autor-descripcion">
+<a href="https://twitter.com/neeonez" title="Visitar el sitio de Edu Lázaro" rel="author external">Edu Lázaro</a>: Ingeniero técnico en informática, actualmente trabajo como desarrollador web y programador de videojuegos. </p>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="fa fa-twitter"></i> <a href="https://twitter.com/neeonez">Twitter!</a></li>
+<li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/edulazaro">LinkedIn!</a></li>
+<li><i class="fa fa-github-alt"></i> <a href="https://github.com/edulazaro">GitHub!</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="neo-widget neo-widget-strong mt-2">
+<audio id="sound-bee" src="/wp-content/themes/neoguias/sounds/bee.mp3" preload="auto"></audio>
+<audio id="sound-some" src="/wp-content/themes/neoguias/sounds/some.mp3" preload="auto"></audio>
+<p>👋 Hola! Soy Edu, me encanta crear cosas y he redactado esta guía. Si te ha resultado útil, el mayor favor que me podrías hacer es el de <a href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/#" class="sound-link-bee" onclick="window.open(`https://twitter.com/intent/tweet?text=Me%20ha%20resultado%20útil%20el%20artículo%20que%20@neeonez%20ha%20escrito%20en%20NeoGuias: Windows+y+Node%3A+Gu%C3%ADa+de+iniciaci%C3%B3n%0A%0Ahttps://www.neoguias.com/windows-y-node-guia-de-iniciacion/`, &#39;share-twitter&#39;, &#39;width=550, height=235&#39;); return false;">compatirla en Twitter</a> 😊</p>
+<p class="my-1">Si quieres conocer mis proyectos, <a target="_blank" class="sound-link-some" href="https://twitter.com/neeonez">sígueme en Twitter</a>.</p>
+</div>
+</div>
+<footer class="entry-footer">
+<span class="cat-links"></span>
+</footer>
+</article>
+<div class="comments-area" id="comments">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Deja una respuesta <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.neoguias.com/windows-y-node-guia-de-iniciacion/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.neoguias.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> Los campos obligatorios están marcados con <span class="required">*</span></p><div class="form-group comment-form-comment">
+<label for="comment">Commentario <span class="required">*</span></label>
+<textarea class="form-control" id="comment" name="comment" aria-required="true" cols="45" rows="8"></textarea>
+</div><div class="form-group comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input class="form-control" id="author" name="author" type="text" value="" size="30" aria-required="true"></div>
+<div class="form-group comment-form-email"><label for="email">Email <span class="required">*</span></label> <input class="form-control" id="email" name="email" type="email" value="" size="30" aria-required="true"></div>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="btn btn-secondary" value="Publicar el comentario"> <input type="hidden" name="comment_post_ID" value="253" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d905c82ee1"></p><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea><input type="hidden" id="ak_js" name="ak_js" value="1620625399432"></form> </div>
+</div>
+</main>
+</div>
+
+<div class="widget-area" id="right-sidebar" role="complementary">
+<div class="sidebar-sticky">
+<div class="sidebar-sticky-item" style="height:100%;">
+<div class="stick-me">
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5575737924594063" data-ad-slot="1443926187" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" src="./iniciacion_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="conversion-measurement &#39;src&#39;" data-google-container-id="a!1" data-google-query-id="CIbhi4-nwvACFa-_lgod5CMOrw" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+                     /*(adsbygoogle = window.adsbygoogle || []).push({});*/
+                </script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5575737924594063" data-ad-slot="3878517838" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" src="./iniciacion_files/ads(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="conversion-measurement &#39;src&#39;" data-google-container-id="a!2" data-google-query-id="CJa9lo-nwvACFQYylgodJhwLdw" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+                     /*(adsbygoogle = window.adsbygoogle || []).push({});*/
+                </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wrapper" id="wrapper-footer-full">
+<div class="container" id="footer-full-content" tabindex="-1">
+<div class="row">
+<div id="custom_html-6" class="widget_text footer-widget widget_custom_html widget-count-4 col-md-3"><h3 class="widget-title">Información</h3><div class="textwidget custom-html-widget"><ul class="neo_widget_links">
+<li>
+<a href="https://www.neoguias.com/politica-de-privacidad">Política de privacidad</a>
+</li>
+<li>
+<a href="https://www.neoguias.com/terminos-de-uso">Términos de uso</a>
+</li>
+</ul></div></div><div id="custom_html-3" class="widget_text footer-widget widget_custom_html widget-count-4 col-md-3"><h3 class="widget-title">Contenidos</h3><div class="textwidget custom-html-widget"><ul class="neo_widget_links">
+<li><a href="https://www.neoguias.com/guias">Guías de aprendizaje</a></li>
+<li><a href="https://www.neoguias.com/taller">Proyectos de aprendizaje</a></li>
+<li><a href="https://www.neoguias.com/introducciones">Tutoriales de introducción</a></li>
+</ul></div></div><div id="custom_html-5" class="widget_text footer-widget widget_custom_html widget-count-4 col-md-3"><h3 class="widget-title">Tutoriales</h3><div class="textwidget custom-html-widget"><ul class="neo_widget_links">
+<li>
+<a href="https://www.neoguias.com/tutoriales/sistemas">Tutoriales de Sistemas</a>
+</li>
+<li>
+<a href="https://www.neoguias.com/tutoriales/aplicaciones">Tutoriales de Aplicaciones</a>
+</li>
+<li>
+<a href="https://www.neoguias.com/tutoriales/programacion">Tutoriales de Programación</a>
+</li>
+</ul></div></div><div id="custom_html-4" class="widget_text footer-widget widget_custom_html widget-count-4 col-md-3"><h3 class="widget-title">Comunidad</h3><div class="textwidget custom-html-widget"><p>
+Actualízate con el contenido de Neoguias
+</p>
+<ul class="neo_widget_follow-us">
+<li class="rss"><a href="https://www.neoguias.com/feed/" target="_blank" rel="nofollow noopener"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+<li class="facebook"><a href="https://www.facebook.com/neoguiascom/" target="_blank" rel="nofollow noopener"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li class="twitter"><a href="https://twitter.com/neoguiascom" target="_blank" rel="nofollow noopener"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li class="email"><a href="mailto:info@neeonez.com" class="manual-optin-trigger"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+</ul></div></div>
+</div>
+</div>
+</div>
+<div class="wrapper" id="wrapper-footer">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<footer class="site-footer" id="colophon">
+<div class="site-info">
+ © &nbsp;2021 <a href="https://www.neoguias.com/" rel="nofollow" target="_parent">neoguias.com</a>. Desarrollado con mucho ❤️ por Edu Lazaro<br>
+KENODO® LTD <a href="https://www.kenodo.com/" rel="nofollow" target="_parent">kenodo.com</a>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="aioseo-admin"></div><noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async="" data-noptimize="1" src="./iniciacion_files/lazysizes.min.js.descarga"></script>
+<script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
+<script type="text/javascript" src="./iniciacion_files/e-202119.js.descarga" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.2.1',blog:'139599777',post:'253',tz:'2',srv:'www.neoguias.com'} ]);
+	_stq.push([ 'clickTrackerInit', '139599777', '253' ]);
+</script>
+<script type="text/javascript" id="cookieinfo" data-linkmsg="Más información" data-moreinfo="/politica-de-privacidad" data-close-text="Aceptar" data-message="Para mejorar tu experiencia en nuestra web utilizamos cookies. Si aceptas o continúas navegando significa que aceptas su uso. Obtén más información sobre cómo las usamos y cómo puedes controlarlas en nuestra política de cookies.">
+    !function(e){"use strict";var t=e,i=t.document,o="cbinstance";var n={get:function(e){return decodeURIComponent(i.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*"+encodeURIComponent(e).replace(/[\-\.\+\*]/g,"\\$&")+"\\s*\\=\\s*([^;]*).*$)|^.*$"),"$1"))||null},set:function(e,t,o,n,s,r){if(!e||/^(?:expires|max\-age|path|domain|secure)$/i.test(e))return!1;var a="";if(o)switch(o.constructor){case Number:a=o===1/0?"; expires=Fri, 31 Dec 9999 23:59:59 GMT":"; max-age="+o;break;case String:a="; expires="+o;break;case Date:a="; expires="+o.toUTCString()}return i.cookie=encodeURIComponent(e)+"="+encodeURIComponent(t)+a+(s?"; domain="+s:"")+(n?"; path="+n:"")+(r?"; secure":""),!0},has:function(e){return new RegExp("(?:^|;\\s*)"+encodeURIComponent(e).replace(/[\-\.\+\*]/g,"\\$&")+"\\s*\\=").test(i.cookie)},remove:function(e,t,o){return!(!e||!this.has(e))&&(i.cookie=encodeURIComponent(e)+"=; expires=Thu, 01 Jan 1970 00:00:00 GMT"+(o?"; domain="+o:"")+(t?"; path="+t:""),!0)}},s={merge:function(){var e,t={},i=0,o=arguments.length;if(0===o)return t;for(;i<o;i++)for(e in arguments[i])Object.prototype.hasOwnProperty.call(arguments[i],e)&&(t[e]=arguments[i][e]);return t},str2bool:function(e){switch((e=""+e).toLowerCase()){case"false":case"no":case"0":case"":return!1;default:return!0}},fade_in:function(e){e.style.opacity<1&&(e.style.opacity=(parseFloat(e.style.opacity)+.05).toFixed(2),t.setTimeout(function(){s.fade_in(e)},50))},get_data_attribs:function(e){var t={};if(Object.prototype.hasOwnProperty.call(e,"dataset"))t=e.dataset;else{var i,o=e.attributes;for(i in o)if(Object.prototype.hasOwnProperty.call(o,i)){var n=o[i];if(/^data-/.test(n.name))t[s.camelize(n.name.substr(5))]=n.value}}return t},normalize_keys:function(e){var t={};for(var i in e)if(Object.prototype.hasOwnProperty.call(e,i)){var o=s.camelize(i);t[o]=e[o]?e[o]:e[i]}return t},camelize:function(e){for(var t="-",i=e.indexOf(t);-1!=i;){var o=i===e.length-1,n=o?"":e[i+1],s=n.toUpperCase(),r=o?t:t+n;i=(e=e.replace(r,s)).indexOf(t)}return e},find_script_by_id:function(e){for(var t=i.getElementsByTagName("script"),o=0,n=t.length;o<n;o++)if(e===t[o].id)return t[o];return null}},r=s.find_script_by_id("cookieinfo"),a=e.cookieinfo=function(e){this.init(e)};a.prototype={cookiejar:n,init:function(t){this.inserted=!1,this.closed=!1,this.test_mode=!1;if(this.default_options={cookie:"we-love-cookies",closeText:"&#10006;",cookiePath:"/",debug:!1,expires:1/0,zindex:1e20,mask:!1,maskOpacity:.5,maskBackground:"#999",height:"auto",minHeight:"21px",bg:"#eee",fg:"#333",link:"#31A8F0",divlink:"#000",divlinkbg:"#F1D600",position:"bottom",message:"We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",linkmsg:"More info",scriptmsg:"Cookie Info Script",moreinfo:"http://wikipedia.org/wiki/HTTP_cookie",scriptinfo:"https://cookieinfoscript.com",tracking:"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",effect:null,fontSize:"14px",fontFamily:"verdana, arial, sans-serif",instance:o,textAlign:"center",acceptOnScroll:!1},this.options=this.default_options,this.script_el=r,this.script_el){var i=s.get_data_attribs(this.script_el);this.options=s.merge(this.options,i)}t&&(t=s.normalize_keys(t),this.options=s.merge(this.options,t)),o=this.options.instance,this.options.zindex=parseInt(this.options.zindex,10),this.options.mask=s.str2bool(this.options.mask),"string"==typeof this.options.expires&&"function"==typeof e[this.options.expires]&&(this.options.expires=e[this.options.expires]),"function"==typeof this.options.expires&&(this.options.expires=this.options.expires()),this.script_el&&this.run()},log:function(){"undefined"!=typeof console&&console.log.apply(console,arguments)},run:function(){if(!this.agreed()){var e=this;!function(e,t){var i=!1,o=!0,n=e.document,s=n.documentElement,r=n.addEventListener?"addEventListener":"attachEvent",a=n.addEventListener?"removeEventListener":"detachEvent",c=n.addEventListener?"":"on",l=function(o){"readystatechange"==o.type&&"complete"!=n.readyState||(("load"==o.type?e:n)[a](c+o.type,l,!1),!i&&(i=!0)&&t.call(e,o.type||o))},p=function(){try{s.doScroll("left")}catch(e){return void setTimeout(p,50)}l("poll")};if("complete"==n.readyState)t.call(e,"lazy");else{if(n.createEventObject&&s.doScroll){try{o=!e.frameElement}catch(e){}o&&p()}n[r](c+"DOMContentLoaded",l,!1),n[r](c+"readystatechange",l,!1),e[r](c+"load",l,!1)}}(t,function(){e.insert()})}},build_viewport_mask:function(){var e=null;if(!0===this.options.mask){var t=this.options.maskOpacity,o='<div id="cookieinfo-mask" style="position:fixed;top:0;left:0;width:100%;height:100%;background:'+this.options.maskBackground+";zoom:1;filter:alpha(opacity="+100*t+");opacity:"+t+";z-index:"+this.options.zindex+';"></div>',n=i.createElement("div");n.innerHTML=o,e=n.firstChild}return e},agree:function(){return this.cookiejar.set(this.options.cookie,1,this.options.expires,this.options.cookiePath),!0},agreed:function(){return this.cookiejar.has(this.options.cookie)},close:function(){return this.inserted&&(this.closed||(this.element&&this.element.parentNode.removeChild(this.element),this.element_mask&&this.element_mask.parentNode.removeChild(this.element_mask),this.closed=!0)),this.closed},agree_and_close:function(){return this.agree(),this.close()},cleanup:function(){return this.close(),this.unload()},unload:function(){return this.script_el&&this.script_el.parentNode.removeChild(this.script_el),e[o]=void 0,!0},insert:function(){this.element_mask=this.build_viewport_mask();var e=this.options.zindex;this.element_mask&&(e+=1);var t=i.createElement("div");t.className="cookieinfo",t.style.position="fixed",t.style.left=0,t.style.right=0,t.style.height=this.options.height,t.style.minHeight=this.options.minHeight,t.style.zIndex=e,t.style.background=this.options.bg,t.style.color=this.options.fg,t.style.lineHeight=t.style.minHeight,t.style.padding="8px 18px",t.style.fontFamily=this.options.fontFamily,t.style.fontSize=this.options.fontSize,t.style.textAlign=this.options.textAlign,"top"===this.options.position?t.style.top=0:t.style.bottom=0,t.innerHTML='<div class="cookieinfo-close" style="float:right;display:block;padding:5px 8px 5px 8px;min-width:100px;margin-left:5px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;">'+this.options.closeText+'</div><span style="display:block;padding:5px 0 5px 0;">'+this.options.message+" <a>"+this.options.linkmsg+"</a><img> <a>"+this.options.scriptmsg+"</a></span>",this.element=t;var o=t.getElementsByTagName("a")[0];o.href=this.options.moreinfo,o.style.textDecoration="none",o.style.color=this.options.link;var n=t.getElementsByTagName("a")[1];n.href=this.options.scriptinfo,n.style.textDecoration="none",n.style.display="none",n.style.color=this.options.link;var r=t.getElementsByTagName("div")[0];r.style.cursor="pointer",r.style.color=this.options.divlink,r.style.background=this.options.divlinkbg,r.style.textAlign="center";var a=t.getElementsByTagName("img")[0];function c(e,t,i){var o=e.addEventListener?"addEventListener":"attachEvent",n=e.addEventListener?"":"on";e[o](n+t,i,!1)}a.src=this.options.tracking,a.style.display="none";var l=this;c(r,"click",function(){l.agree_and_close()}),this.element_mask&&(c(this.element_mask,"click",function(){l.agree_and_close()}),i.body.appendChild(this.element_mask)),this.options.acceptOnScroll&&c(window,"scroll",function(){l.agree_and_close()}),i.body.appendChild(this.element),this.inserted=!0,"fade"===this.options.effect?(this.element.style.opacity=0,s.fade_in(this.element)):this.element.style.opacity=1}},r&&(e[o]||(e[o]=new a))}(window);
+</script>
+<script defer="" src="./iniciacion_files/autoptimize_3f8a7131eaf87c01e0b2f5fa3e66ec27.js.descarga"></script>
+
+<div class="cookieinfo" style="position: fixed; left: 0px; right: 0px; height: auto; min-height: 21px; z-index: 2147483647; background: rgb(238, 238, 238); color: rgb(51, 51, 51); line-height: 21px; padding: 8px 18px; font-family: verdana, arial, sans-serif; font-size: 14px; text-align: center; bottom: 0px; opacity: 1;"><div class="cookieinfo-close" style="float: right; display: block; padding: 5px 8px; min-width: 100px; margin-left: 5px; border-radius: 5px; cursor: pointer; color: rgb(0, 0, 0); background: rgb(241, 214, 0); text-align: center;">Aceptar</div><span style="display:block;padding:5px 0 5px 0;">Para mejorar tu experiencia en nuestra web utilizamos cookies. Si aceptas o continúas navegando significa que aceptas su uso. Obtén más información sobre cómo las usamos y cómo puedes controlarlas en nuestra política de cookies. <a href="https://www.neoguias.com/politica-de-privacidad" style="text-decoration: none; color: rgb(49, 168, 240);">Más información</a><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="display: none;"> <a href="https://cookieinfoscript.com/" style="text-decoration: none; display: none; color: rgb(49, 168, 240);">Cookie Info Script</a></span></div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_2_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./iniciacion_files/ads(2).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="conversion-measurement &#39;src&#39;" data-google-container-id="a!3" data-load-complete="true"></iframe></ins></ins></ins><img src="./iniciacion_files/g.gif" alt=":)" width="6" height="5" id="wpstats"><iframe id="google_osd_static_frame_5728136981542" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./iniciacion_files/saved_resource.html"></iframe></body><iframe id="google_esf" name="google_esf" src="./iniciacion_files/zrt_lookup.html" style="display: none;"></iframe></html>

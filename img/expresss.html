@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://expressjs.com/es/starter/installing.html -->
+<html lang="es" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Instalación de Express</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="og:image" content="https://expressjs.com/images/express-facebook-share.png">
+<link rel="icon" type="image/png" href="https://expressjs.com/images/favicon.png">
+<link rel="stylesheet" href="./expresss_files/style.css">
+<link rel="stylesheet" href="./expresss_files/dropit.css">
+<link rel="stylesheet" href="./expresss_files/prism.css">
+<link rel="stylesheet" href="./expresss_files/font-awesome.min.css">
+<link rel="stylesheet" href="./expresss_files/css">
+<link rel="stylesheet" href="./expresss_files/es.css">
+<link rel="stylesheet" href="./expresss_files/nodeinteractive.css">
+
+<script data-cfasync="false" src="./expresss_files/jquery.min.js.descarga"></script>
+<script data-cfasync="false" src="./expresss_files/ismobile.js.descarga"></script>
+<script data-cfasync="false" src="./expresss_files/app.js.descarga"></script>
+<script data-cfasync="false" src="./expresss_files/retina.js.descarga"></script>
+<script data-cfasync="false" src="./expresss_files/dropit.js.descarga"></script>
+<script data-cfasync="false" src="./expresss_files/prism.js.descarga"></script>
+<link rel="stylesheet" href="./expresss_files/docsearch.min.css">
+</head>
+<body class="non-en-doc scroll">
+<section class="page content">
+<header>
+<div id="blm-banner">
+Black Lives Matter. <br>
+<a id="blm-donate" href="https://support.eji.org/give/153413/#!/donation/checkout">Support the Equal Justice Initiative</a>.
+</div>
+<div id="mobile-menu">
+<div id="nav-button" class="fa fa-bars fa-2x button"></div>
+</div>
+<section id="logo"><a href="https://expressjs.com/" class="express">Express</a>
+</section>
+<div id="navbar">
+<span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="q" placeholder="🔎 search" class="ds-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="search input" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Arial; font-size: 13.3333px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+<ul id="navmenu">
+<li><a href="https://expressjs.com/es/" id="home-menu">Inicio</a></li>
+<li>
+<ul id="getting-started-menu" class="menu dropit">
+<li class="dropit-trigger"><a href="https://expressjs.com/es/starter/installing.html" class="active">Cómo empezar</a>
+<ul class="dropit-submenu" style="display: none;">
+<li>
+<a href="https://expressjs.com/es/starter/installing.html" class="current">
+Instalación
+</a>
+</li>
+<li>
+<a href="https://expressjs.com/es/starter/hello-world.html">
+Hello world
+</a>
+</li>
+<li>
+<a href="https://expressjs.com/es/starter/generator.html">
+Generador de Express
+</a>
+</li>
+<li>
+<a href="https://expressjs.com/es/starter/basic-routing.html">
+Direccionamiento básico
+</a>
+</li>
+<li>
+<a href="https://expressjs.com/es/starter/static-files.html">
+Archivos estáticos
+</a>
+</li>
+<li>
+<a href="https://expressjs.com/es/starter/faq.html">
+Preguntas más frecuentes
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul id="guide-menu" class="menu dropit">
+<li class="dropit-trigger"><a href="https://expressjs.com/es/guide/routing.html">Guía</a>
+<ul class="dropit-submenu" style="display: none;">
+<li><a href="https://expressjs.com/es/guide/routing.html">Direccionamiento</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/writing-middleware.html">Escritura de middleware</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/using-middleware.html">Utilización del middleware</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/using-template-engines.html">Utilización de motores de plantilla</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/error-handling.html">Manejo de errores</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/debugging.html">Depuración</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/behind-proxies.html">Express detrás de proxies</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/migrating-4.html">Migración a Express 4</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/migrating-5.html">Migración a Express 5</a>
+</li>
+<li><a href="https://expressjs.com/es/guide/database-integration.html">Integración de la base de datos</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul id="application-menu" class="menu dropit">
+<li class="dropit-trigger"><a href="https://expressjs.com/es/4x/api.html">Referencia de API</a>
+<ul class="dropit-submenu" style="display: none;">
+<li><a href="https://expressjs.com/es/4x/api.html">4.x</a>
+</li>
+<li><a href="https://expressjs.com/es/3x/api.html">3.x (en desuso)</a>
+</li>
+<li><a href="https://expressjs.com/2x/">2.x (en desuso)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul id="advanced-topics-menu" class="menu dropit">
+<li class="dropit-trigger"><a href="https://expressjs.com/es/advanced/developing-template-engines.html">Temas avanzados</a>
+<ul class="dropit-submenu" style="display: none;">
+<li><a href="https://expressjs.com/es/advanced/developing-template-engines.html">Motores de plantilla</a>
+</li>
+<li><a href="https://expressjs.com/es/advanced/pm.html">Utilización de gestores de procesos</a>
+</li>
+<li><a href="https://expressjs.com/es/advanced/security-updates.html">Actualizaciones de seguridad</a>
+</li>
+<li><a href="https://expressjs.com/es/advanced/best-practice-security.html">Mejores prácticas de seguridad</a>
+</li>
+<li><a href="https://expressjs.com/es/advanced/best-practice-performance.html">Mejores prácticas de rendimiento</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul id="resources-menu" class="menu dropit">
+<li class="dropit-trigger"><a href="https://expressjs.com/es/resources/glossary.html">Recursos</a>
+<ul class="dropit-submenu" style="display: none;">
+<li><a href="https://expressjs.com/es/resources/glossary.html">Glosario</a>
+</li>
+<li><a href="https://expressjs.com/es/resources/middleware.html">Middleware</a>
+</li>
+<li><a href="https://expressjs.com/es/resources/community.html">Comunidad</a>
+</li>
+<li><a href="https://expressjs.com/es/resources/learning.html">Aprendizaje adicional</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</header>
+<div id="overlay"></div>
+<div id="i18n-notice-box" class="doc-box doc-warn">
+<p></p><p>Esta traducción proporcionada por <a href="http://strongloop.com/">StrongLoop / IBM</a>.</p>
+Este documento puede estar desfasado respecto a la documentación en inglés. Para ver las últimas actualizaciones, consulte la <a href="https://expressjs.com/">documentación en inglés</a>.
+<p></p>
+<div id="close-i18n-notice-box" title="Close">✖</div>
+</div>
+<div id="page-doc" markdown="1">
+<h1 id="instalación">Instalación</h1>
+<p>Suponiendo que ya ha instalado <a href="https://nodejs.org/">Node.js</a>, cree un directorio para que contenga la aplicación y conviértalo en el directorio de trabajo.</p>
+<pre class="language-sh"><code class="language-sh" translate="no">
+$ mkdir myapp
+$ cd myapp
+</code>
+</pre>
+<p>Utilice el mandato <code>npm init</code> para crear un archivo <code>package.json</code> para la aplicación.
+Para obtener más información sobre cómo funciona <code>package.json</code>, consulte <a href="https://docs.npmjs.com/files/package.json">Specifics of npm’s package.json handling</a>.</p>
+<pre class="language-sh"><code class="language-sh" translate="no">
+$ npm init
+</code>
+</pre>
+<p>Este mandato solicita varios elementos como, por ejemplo, el nombre y la versión de la aplicación.
+Por ahora, sólo tiene que pulsar INTRO para aceptar los valores predeterminados para la mayoría de ellos, con la siguiente excepción:</p>
+<pre class="language-sh"><code class="language-sh" translate="no">
+entry point: (index.js)
+</code>
+</pre>
+<p>Especifique <code>app.js</code> o el nombre que desee para el archivo principal. Si desea que sea <code>index.js</code>, pulse INTRO para aceptar el nombre de archivo predeterminado recomendado.</p>
+<p>A continuación, instale Express en el directorio <code>myapp</code> y guárdelo en la lista de dependencias. Por ejemplo:</p>
+<pre class="language-sh"><code class="language-sh" translate="no">
+$ npm install express --save
+</code>
+</pre>
+<p>Para instalar Express temporalmente y no añadirlo a la lista de dependencias, omita la opción <code>--save</code>:</p>
+<pre class="language-sh"><code class="language-sh" translate="no">
+$ npm install express
+</code>
+</pre>
+<div class="doc-box doc-info">
+<p>Los módulos de Node que se instalan con la opción <code>--save</code> se añaden a la lista <code>dependencies</code> en el archivo <code>package.json</code>.
+Posteriormente, si ejecuta <code>npm install</code> en el directorio <code>app</code>, los módulos se instalarán automáticamente en la lista de dependencias.</p>
+</div>
+</div>
+</section>
+<a id="top" href="https://expressjs.com/es/starter/installing.html#"><img src="./expresss_files/arrow.png"></a>
+<footer>
+<div id="footer-content">
+<div id="github">
+<iframe src="./expresss_files/github-btn.html" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+</div>
+<div id="sponsor"><a href="https://expressjs.com/">Express</a> es un proyecto de la <a href="https://openjsf.org/">Fundación OpenJS</a>.</div>
+<div id="fork"><a href="https://github.com/expressjs/expressjs.com">Bifurque el sitio web en GitHub</a>.</div>
+<div>Copyright © StrongLoop, Inc. y otros colaboradores de expressjs.com.</div>
+</div>
+<div id="license">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><img alt="Licencia Creative Commons" style="border-width:0" src="./expresss_files/80x15.png"></a> Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">Licencia Creative Commons Atribución-CompartirIgual 3.0 Estados Unidos de América</a>.
+</div>
+</footer>
+<script async="" type="text/javascript" src="./expresss_files/docsearch.min.js.descarga" onload="docsearch({
+  apiKey: &#39;7164e33055faa6ecddefd9e08fc59f5d&#39;,
+  indexName: &#39;expressjs&#39;,
+  inputSelector: &#39;#q&#39;,
+  algoliaOptions: { &#39;facetFilters&#39;: [&#39;lang:es&#39;] }
+})"></script>
+
+
+</body></html>
